@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>clock</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style>
+            h1,p{
+                text-align: center;
+                color:rgb(0, 81, 139);
+            }
+        </style>
+        <script>
+        setTimeout(function(){
+        window.location.reload(1);
+        }, 5000);
+        </script>
+    </head>
+    <body>
+        <a href="../index.html"><img src="https://www.freepnglogos.com/uploads/logo-home-png/photo-icon-home-logo-23.png" style="height:42px;width:42px; float:left;"></img></a>
+        <br></br><h1>To-Day:</h1>
+        <p id="days"></p>
+        <script>
+            var today = new Date();
+            var day = today.getDay();
+            var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            var whatday = daylist[day];
+            document.getElementById("days").innerHTML = whatday;
+        </script>
+        <h1>Time:</h1>
+        <p id="times"></p>
+        <script>
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            var suffix = (hour >= 12)? " PM ":" AM ";
+            hour = (hour >= 12)? hour - 12: hour; 
+            document.getElementById("times").innerHTML = "Current Time : "+hour + suffix + " : " + minute + " : " + second;
+        </script>
+    </body>
+</html>

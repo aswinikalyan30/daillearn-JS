@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Your details</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <a href="../index.html"><img src="https://www.freepnglogos.com/uploads/logo-home-png/photo-icon-home-logo-23.png" style="height:42px;width:42px; float:left;"></img></a>
+
+    <div class="center">
+        <form class="form" method="post">
+        
+          <h1 class="header">Deets</h1>
+        
+          <div class="signup__field">
+            <label for="first_name" class="label">Name</label>
+            <input type="text" name="first_name" id="first_name" class="input-field" required>
+          </div>
+        
+          <div class="signup__field">
+            <label for="last_name" class="label">Age</label>
+            <input type="number" name="age" id="age" class="input-field" required>
+          </div>
+        
+          <div class="signup__field">
+            <label for="email" class="label">Email Address</label>
+            <input type="email" name="email" id="email" class="input-field" required>
+          </div>
+        
+          <div class="signup__field">
+            <label class="label" for="gender">Gender</label>
+            <div class="select-field">
+              <select name="gender" id="gender" class="select-field__menu">
+                <option>Please select an option</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non Binary">Non Binary</option>
+                <option value="DontDisclose">Do not wish to disclose</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="signup__field">
+            <label for="address" class="label">Address</label>
+            <textarea class="form-control" id="address" rows="5" class="input-field" style="resize: none; width:280px" required></textarea>
+            
+          </div>
+        
+          <fieldset>
+            <legend class="favorites">Favorites</legend>
+            <div class="signup__field">
+              <div class="label">What's your favorite Harry Potter Character</div>
+        
+              <input type="checkbox" value="harry" id="hp_harry" name="harry_potter">
+              <label for="hp_harry">Harry Potter</label>
+        
+              <input type="checkbox" value="hermoine" id="hp_hermoine" name="harry_potter">
+              <label for="hp_hermoine">Hermoine Granger</label>
+        
+              <input type="checkbox" value="ron" id="hp_ron" name="harry_potter">
+              <label for="hp_ron">Ron Weasley</label>
+        
+              <input type="checkbox" value="dumb" id="hp_dumb" name="harry_potter">
+              <label for="hp_dumb">Albus Dumbledore</label>
+            </div>
+            <div class="signup__field">
+                <div class="label">What's your favorite Color</div>
+          
+                <input type="radio" value="blue" id="favcol_blue" name="favcol">
+                <label for="favcol">Blue</label>
+                <input type="radio" value="yellow" id="favcol_yellow" name="favcol">
+                <label for="favcol">Yellow</label>
+                <input type="radio" value="red" id="favcol_red" name="favcol">
+                <label for="favcol">Red</label>
+                <input type="radio" value="orange" id="favcol_orange" name="favcol">
+                <label for="favcol">Orange</label>
+                <input type="radio" value="green" id="favcol_green" name="favcol">
+                <label for="favcol">Green</label>
+                <input type="radio" value="purple" id="favcol_purple" name="favcol">
+                <label for="favcol">Purple</label>
+              </div>
+        
+          </fieldset>
+        
+          <div class="signup__button" id="signup">
+            <button class="button" id="subs" type="submit" onclick="page_redirect()">Submit</button>
+          </div>
+        
+        </form>
+        </div>
+</body>
+</html>
