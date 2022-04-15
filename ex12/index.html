@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average</title>
+</head>
+<body>
+    <h3>Input the number:</h3>
+    <input type="number" name="first" placeholder="Enter a number" id="first">
+    <button onclick="myFunction()">Calculate Average</button>
+    <p id="res"></p>
+    <script>
+        function myFunction() 
+        {
+            let num = Number(document.getElementById("first").value);
+            const avg =(num) => {
+                let i=0;
+                let sum=0;
+                while(i<=num){
+                sum+=i;
+                i++;
+                }
+                return (sum)/(num+1);
+            }
+            document.getElementById("res").innerHTML = avg(num);
+            }
+
+                // let i=0;
+                // let sum=0;
+                // while(i<=num){
+                //     sum+=i;
+                //     i++;
+                // }
+                // let avg = sum/(num+1);
+                // document.getElementById("res").innerHTML = avg;
+
+
+    </script>
+
+</body>
+</html>
